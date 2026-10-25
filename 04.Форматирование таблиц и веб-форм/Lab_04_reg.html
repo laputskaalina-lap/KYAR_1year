@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>text</title>
+    <style>
+        input:focus {background:rgb(255, 255, 255)}
+        table{
+            width: 100%;
+            height: 100%;
+        }
+        h1, td{
+            font-size: 1.2em;
+            color: rgba(255,255,255,1);
+            text-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+        }
+        input, select{background:rgba(255,255,255,.5);
+        }
+        .rf{ color: rgba(255,255,255,1);background: navy; box-shadow: 0 0 4px white;}
+    </style>
+</head>
+<body bgcolor="#8B008B">
+    <h1>Регистрацция постоянногго клиента</h1>
+    <form>
+    <table>
+            <tr>
+                <td>Фамилия:</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Имя:</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Отчество:</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Ваш возраст:</td><td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Ваш пол:</td><td><input type="checkbox">Мужской<input type="checkbox">Женский</td>
+            </tr>
+            <tr>
+                <td>Email:</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Страна проживания:</td><td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Откуда вы о нас узнали?</td><td><select>
+                <option>твитер</option>
+                <option>реклама с чипсов</option>
+                <option>снепчат</option>
+                <option>банер</option>
+            </select></td>
+            </tr>
+            <tr>
+                <td>Дата заполнения</td><td><input type="date"></td>
+            </tr>
+             <tr>
+                <td></td><td><input class="rf" type="submit" value="Зарегестрировать"><input class="rf" type="submit" value="Отменить"></td>
+            </tr>
+    </table>
+    </form>
+</body>
+</html>

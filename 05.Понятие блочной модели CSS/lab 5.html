@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   <title>Блочная модель</title>
+    <style>
+.palette {
+    display: inline-flex;
+    gap: 5px;
+    margin-bottom: 40px auto;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.r {
+    border: 10px solid red;
+}
+.g {
+    border: 10px dashed green;
+}
+.b {
+    border: 10px dotted blue;
+}
+.c {
+    border: 10px solid cyan;
+}
+.m {
+    border: 10px solid magenta;
+}
+.y {
+    border: 10px solid yellow;
+}
+.k {
+    border: 10px solid black;
+}
+
+.text-block {
+    border: 10px solid yellow;
+    padding: 20px;
+    width: 600px;
+}
+.paragraph-1 {
+    width: 400px;
+    margin: 5px auto;
+    border: solid #FF7F50;
+    padding: 5px;
+    background: #FFA500;
+}
+.paragraph-2 {
+    width: 400px;
+    margin: 5px auto;
+    border: 5px solid #FF4500;
+    border-radius: 20px / 40px;
+    box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    padding: 5px;
+    background: #FFA500;
+}
+
+.paragraph-3 {
+    width: 400px;
+    margin: 5px auto;
+    border: solid #FF4500;
+    padding: 5px;
+    background: #FFA500;
+}
+
+.border-1 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: solid brown;
+    border-bottom: solid yellow;
+    border-right: solid darkblue;
+    border-top: solid orange;
+}
+
+.border-2 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: solid #007BA7;
+    border-right: solid #007BA7;
+}
+
+.border-3 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-top: solid rgb(229, 43, 80);
+    border-left: dashed lightblue;
+    border-right: dashed lightblue;
+    border-bottom: dashed lightblue;
+}
+
+.border-4 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: dotted orange 1px;
+}
+
+.border-5 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-top: solid darkblue 2px;
+    border-bottom: solid darkblue 2px;
+    border-left: dashed maroon;
+    border-right: dashed maroon;
+}
+
+.border-6 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: double #B3446C;
+}
+
+.border-7 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-top: dashed #808000 1px;
+    border-bottom: solid #FF7518 3px;
+}
+
+.border-8 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: double #CC7722;
+    border-bottom: double #CC7722;
+}
+
+.border-9 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-right: ridge #B5A642;
+    border-top: ridge #B5A642;
+}
+
+.border-10 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: dotted rgb(0, 40, 0) 5px;
+    border-right: dotted rgb(0, 40, 0) 5px;
+    border-bottom: dotted rgb(0, 40, 0) 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="palette">
+        <div class="box r">R</div>
+        <div class="box g">G</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box m">M</div>
+        <div class="box y">Y</div>
+        <div class="box k">K</div>
+    </div>
+
+    <p class="paragraph-1">
+        Это первый абзац.
+    </p>
+
+    <p class="paragraph-2">
+        Это второй абзац. 
+    </p>
+
+    <p class="paragraph-3">
+        Это третий абзац.
+    </p>
+
+    <div class="border-1">
+        Сплошная граница: коричневая слева, желтая внизу, темно-синяя справа, оранжевая вверху.
+    </div>
+
+    <div class="border-2">
+        Слева и справа сплошная линия #007BA7.
+    </div>
+
+    <div class="border-3">
+        Сплошная граница rgb(229, 43, 80) сверху, пунктирная голубая слева, справа и снизу.
+    </div>
+
+    <div class="border-4">
+        Точечная граница оранжевого цвета 1 пиксель.
+    </div>
+
+    <div class="border-5">
+        Темно-синяя 2px сверху и снизу, пунктирная бордовая слева и справа.
+    </div>
+
+    <div class="border-6">
+        Двойная сплошная граница #B3446C.
+    </div>
+
+    <div class="border-7">
+        Пунктирная #808000 1px сверху, сплошная #FF7518 3px снизу.
+    </div>
+
+    <div class="border-8">
+        Двойная сплошная граница #CC7722 слева и внизу.
+    </div>
+
+    <div class="border-9">
+        Граница гребень #B5A642 справа и сверху.
+    </div>
+
+    <div class="border-10">
+        Точечная граница rgb(0, 40, 0) 5px слева, справа и снизу.
+    </div>
+</body>
+</html>

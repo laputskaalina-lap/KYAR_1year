@@ -1,0 +1,49 @@
+body {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-attachment: scroll;
+        }
+        .logo-container{
+            background-attachment: fixed;
+            float: right;
+        }
+        .logo-container img {
+            background-attachment: fixed;
+            width: 150px; 
+            height: auto;
+        }
+
+        ul.custom-list {
+            list-style: none; 
+            padding-left: 0;
+        }
+        ul.custom-list li {
+            background-image: url("https://i.pinimg.com/1200x/ec/b1/73/ecb1735503f35217a727a4ccb0f93709.jpg"); 
+            width: 600px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: 0.5px;
+        }
+
+ 
+        .content-images1 img {
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+            float: left; 
+        }
+        .content-images2 img {
+            width: 400px;
+            height: 500px;
+            margin: 10px;
+            float: right; 
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }

@@ -1,0 +1,26 @@
+div {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+}
+.div1 {
+    background-image: linear-gradient(to bottom, #0000FF, #800080, #FF0000);
+}
+.div2 {
+    background-image: repeating-linear-gradient(45deg, #0000FF, #0000FF 10px, #FF0000 10px, #FF0000 20px);
+}
+.div3 {
+    background-image: radial-gradient(circle, #00FF00, #FFFF00);
+}
+.div4 {
+    background-image: conic-gradient(from 90deg, #00FF00 0 25%, #FFFF00 25% 50%, #00FF00 50% 75%, #FFFF00 75% 100%);
+}
+.div5 {
+    background-image: radial-gradient(circle, #FFFF00, #00FF00, #800080), 
+    radial-gradient(circle, #FFFF00, #00FF00, #0000FF);
+}
+.div6 {
+    background-image: 
+  linear-gradient(to right, #aaff00 15%, #008000 50%, #008000 60%, transparent 70%),
+linear-gradient(to top, purple 10%, blue 27%, white 35%, black 77%);
+}
