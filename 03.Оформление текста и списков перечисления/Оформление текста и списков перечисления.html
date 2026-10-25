@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Text</title>
+    <style>
+       @font-face {
+            font-family: 'Caveat';
+            src: url('font/Caveat/Caveat-Bold.woff2') format('woff2'),
+                 url('font/Caveat/Caveat-Bold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Exo 2';
+            src: url('font/Exo_2/Exo2-BlackItalic.woff2') format('woff2'),
+                 url('font/Exo_2/Exo2-BlackItalic.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Comfortaa';
+            src: url('font/Comfortaa/Comfortaa-Regular.woff2') format('woff2'),
+                 url('font/Comfortaa/Comfortaa-Regular.woff') format('woff');
+        }
+       h1 {
+            font-family: 'Caveat', cursive;
+            margin-bottom: 0;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 45px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }/*font-variant: small-caps;*//*:hover, :focus, :first-child*/
+        h2 {
+            font-family: 'Exo 2', sans-serif;
+            margin-bottom: 1.2em;
+            margin-top: 0.2rem;
+            text-indent: 25px;
+            text-align: left;
+        }
+        p {
+            font-family: 'Comfortaa', cursive;
+            text-indent: 25px;
+            text-align: justify;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 200%;
+            font-size: 20px;
+        }
+        p::first-letter {
+            font-weight: bold;
+            font-size: 45px;
+            color: white;
+            background-color: hsla(275, 100%, 10%, 1);
+        }
+        ol {
+            font-family: 'Comfortaa', cursive;
+            font-size: 20px;
+            color: black;
+            padding-left: 2em;
+        }
+
+        ol li {
+            list-style-type: none;
+            counter-increment: item;
+            color: black;
+        }
+/* Как изменить интервал между словами или символами?
+
+Между словами: word-spacing
+Между символами: letter-spacing
+WOFF (предпочтителен — сжатый, широкая поддержка), 
+TTF/OTF (универсальные), EOT (старые версии IE), 
+SVG (поддерживается только Safari, файлы большого размера)*/
+        ol li::before {
+            content: counter(item, upper-roman) ". ";
+            color: blue;
+            font-weight: bold;
+        }/*list-style-image*/
+    </style>
+</head>
+<body>
+
+    <h1>Сиамская кошка</h1>
+
+    <h2>Внешний вид</h2>
+
+    <p>Отличительными чертами которой являются тонкое, длинное, трубообразное гибкое тело, голова в виде длинного клина, большие миндалевидные косо поставленные глаза ярко-синего цвета, очень большие уши, широкие в основании и заострённые на концах, поставленные таким образом, чтобы между мочкой носа и кончиками ушей образовывался равносторонний треугольник.</p>
+
+    <p>Шерсть короткая, плотно прилегающая к телу, без подшёрстка. Очень длинный хлыстообразный хвост, тонкий от самого основания с заостренным длинным кончиком.</p>
+
+    <h2>Характеры</h2>
+
+    <p>Активные кошки. Нуждаются во внимании, любят физический контакт. Общительные, ласковые и доверчивые.</p>
+
+    <h2>Разновидности</h2>
+
+    <ol>
+        <li>Балийская</li>
+        <li>Бурманская</li>
+        <li>Гималайская</li>
+        <li>Сноу-шу</li>
+        <li>Тонкинез</li>
+    </ol>
+
+</body>
+</html>
